@@ -16,7 +16,6 @@ class Talking():
 talking = Talking("Timi")
 talking.to_answer()
 
-# можете не ставить два пж
 
 
 
