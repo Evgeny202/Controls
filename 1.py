@@ -1,21 +1,24 @@
-"""
-5. Класс <Разговор> (Talking) Экземпляр класса иницилизируется с аргументом name - именем котенка. Класс реализирует методы: - to_answer()
-- ответить: котенок через один раз отвечает да или нет, начиная с да. Метод возращает "moore-moore", если да, "meow-meow", если нет. Одновременно
-увеличивается количество соотвествующих ответов; - number_yes() - количество ответов да; - number_no() - количество ответов нет.
-"""
-from random import randint
+# Задача 6.
 
-class Talking():
-    def __init__(self, name):
-        self.name = name
-        self.number_yes = 0
-        self.number_no = 0
-    def to_answer(self):
-        if
+class AirCasyle():
+    def __init__(self, height,clouds, color, transparency, n):
+        self.height = height
+        self.clouds = clouds
+        self.color = color
+        self.transparency = transparency
+        self.n = n
 
-talking = Talking("Timi")
-talking.to_answer()
+    def change_height(self,value, n):
+        self.height = value
+        self.clouds += n
+        value = value + (n // 5)
+        return value
 
+    def visibility(self, height, transparency, clouds):
+        visibility = (height // transparency) * clouds
+        return visibility
 
+    def __str__(self):
+        return f'The AirCastle at an altitude {self.height} meters is {self.color} with {self.clouds} clouds'
 
-
+    def __gt__(self, other):
