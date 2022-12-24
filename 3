@@ -1,0 +1,13 @@
+number = 0
+num = 0
+spisok = []
+while True:
+    a = int(input("Введите число: "))
+    if a == '':
+        break
+    a = int(a)
+    spisok.append(a)
+    number += a
+    num += 1
+nums = number / num
+print("Среднее число: ", nums)
